@@ -8,6 +8,7 @@
   <title>Omkar Choudhari | Developer Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <style>
     body {
       margin: 0;
@@ -67,43 +68,58 @@
       text-decoration: none;
       font-weight: 600;
     }
+    .project-gif {
+      max-width: 80px;
+      margin-bottom: 0.5rem;
+      border-radius: 8px;
+      animation: fadeIn 2s ease-in-out;
+    }
     footer {
       text-align: center;
       padding: 2rem 1rem;
       font-size: 0.9rem;
       color: #8b949e;
     }
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
   </style>
 </head>
 <body>
   <header data-aos="fade-down">
-    <img src="omkar.jpg" alt="Omkar Choudhari" />
+    <img src="assets/omkar.jpg" alt="Omkar Choudhari" />
     <h1>Omkar Choudhari</h1>
-    <h2>Java & Android Developer | Software Engineer</h2>
-    <a class="button" href="OmkarChoudhariCV.pdf" target="_blank">Download Resume</a>
+    <h2>Java & Android Developer | Fresher | Fast Learner</h2>
+    <a class="button" href="assets/OmkarChoudhari_Resume.pdf" download>
+      <i class="fa fa-download"></i> Download Resume
+    </a>
   </header>
 
   <section class="section" data-aos="fade-up">
-    <h3>About Me</h3>
+    <h3><i class="fa fa-user"></i> About Me</h3>
     <p>
       I’m a passionate Android and Java developer, focused on building real-world projects with clean code and great user experience. I love working with Firebase, Jetpack Compose, and solving problems through technology.
     </p>
   </section>
 
   <section class="section" data-aos="fade-up">
-    <h3>Projects</h3>
+    <h3><i class="fa fa-code"></i> Projects</h3>
     <ul>
       <li>
+        <img src="https://media.giphy.com/media/5xtDarwFf43ItswA0cw/giphy.gif" alt="project gif" class="project-gif" />
         <strong>Employee Registration App</strong><br />
         A Firebase-based CRUD Android app built using Jetpack Compose.<br />
         <a href="https://github.com/Omkar-Choudhari/Employee-Registration-App" target="_blank">View on GitHub</a>
       </li>
       <li>
+        <img src="https://media.giphy.com/media/xUOxf1wVF3N3wbkdfm/giphy.gif" alt="speed tracker gif" class="project-gif" />
         <strong>Speed Tracker App</strong><br />
         Tracks real-time speed using GPS and Firebase Realtime DB.<br />
         <a href="https://github.com/Omkar-Choudhari/Speed-Tracking" target="_blank">View on GitHub</a>
       </li>
       <li>
+        <img src="https://media.giphy.com/media/l0MYKDrJQfC0JvZJS/giphy.gif" alt="hospital app gif" class="project-gif" />
         <strong>Smart Patient Registration System</strong><br />
         A SQLite-based Android app for offline medical data storage.<br />
         <a href="https://github.com/Omkar-Choudhari/Hospital-App" target="_blank">View on GitHub</a>
@@ -112,16 +128,17 @@
   </section>
 
   <section class="section" data-aos="fade-up">
-    <h3>Technical Skills</h3>
+    <h3><i class="fa fa-cogs"></i> Technical Skills</h3>
     <ul>
-      <li><strong>Languages:</strong> Java, Kotlin, C, SQL, XML</li>
-      <li><strong>Tools & Tech:</strong> Android SDK, Jetpack Compose, MVVM, Firebase, SQLite, Git, GitHub</li>
-      <li><strong>Soft Skills:</strong> Problem Solving, Team Collaboration, Critical Thinking</li>
+      <li><i class="fab fa-java"></i> Java, Kotlin, C, SQL, XML</li>
+      <li><i class="fab fa-android"></i> Android SDK, Jetpack Compose, MVVM</li>
+      <li><i class="fa fa-database"></i> Firebase, SQLite</li>
+      <li><i class="fa fa-tools"></i> Git, GitHub, Postman</li>
     </ul>
   </section>
 
   <section class="section" data-aos="fade-up">
-    <h3>Contact</h3>
+    <h3><i class="fa fa-envelope"></i> Contact</h3>
     <ul>
       <li>Email: <a href="mailto:omkar04525@gmail.com">omkar04525@gmail.com</a></li>
       <li>LinkedIn: <a href="https://www.linkedin.com/in/omkar45/" target="_blank">linkedin.com/in/omkar45</a></li>
@@ -139,4 +156,3 @@
   </script>
 </body>
 </html>
-
